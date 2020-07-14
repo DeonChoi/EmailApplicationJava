@@ -30,7 +30,7 @@ public class Email {
 
         //Combine elements to generate an email
         this.email = this.firstName.toLowerCase() + "." + this.lastName.toLowerCase() + "@" + this.department.toLowerCase() + "." + this.companySuffix;
-        System.out.println(this.email);
+        //System.out.println(this.email);
 
     }
 
@@ -98,6 +98,14 @@ public class Email {
     //Get alternate email
     public String getAlternateEmail() {
         return this.alternateEmail;
+    }
+
+    //Show user info
+    public String showInfo() {
+        return "DISPLAY NAME: " + this.firstName + " " + this.lastName +
+                "\nDEPARTMENT: " + this.department +
+                "\nCOMPANY EMAIL: " + this.email +
+                "\nMAILBOX CAPACITY :" + this.mailboxCapacity + "mb";
     }
 
 }
